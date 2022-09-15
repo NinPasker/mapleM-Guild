@@ -28,6 +28,7 @@ header {
         h1 {
             font-family: $logoFont;
             @include fontSize(110);
+            padding-top: 90px;
             position: absolute;
             color: $logoColor;
             text-shadow: 8px 8px 0 $textColor;

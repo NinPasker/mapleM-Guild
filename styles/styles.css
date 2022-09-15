@@ -265,6 +265,11 @@ body {
   font-family: "Dream";
 }
 
+h1,
+h2 {
+  margin: 0;
+}
+
 ul {
   list-style: none;
 }
@@ -272,6 +277,7 @@ ul {
 a {
   text-decoration: none;
   color: navy;
+  text-shadow: 1px 1px 0 #fd3b23;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   font-size: 30px;
@@ -281,6 +287,13 @@ a {
 }
 a:hover, afocus {
   color: #fd3b23;
+  text-shadow: 1px 1px 0 navy;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 90%;
 }
 
 .navBar {
@@ -346,6 +359,7 @@ header .headerContentContainer h1 {
   font-family: "Ninja Naruto";
   font-size: 110px;
   font-size: 5.5rem;
+  padding-top: 90px;
   position: absolute;
   color: #fd3b23;
   text-shadow: 8px 8px 0 navy;
@@ -360,4 +374,8 @@ header .headerContentContainer h1:hover {
 header .headerImgContainer img {
   height: 50vh;
   margin-top: 90px;
+}
+
+main {
+  height: 100vh;
 }
