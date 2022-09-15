@@ -1,0 +1,21 @@
+body {
+    font-family: $primaryFont;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: $textColor;
+    transition: 0.3s;
+    @include fontSize(30);
+    font-weight: bold;
+    letter-spacing: .4rem;
+
+    &:hover,
+    &focus {
+        color: $logoColor;
+    }
+}

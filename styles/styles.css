@@ -251,6 +251,38 @@ html {
   text-align: center;
 }
 
+@font-face {
+  font-family: "Dream";
+  src: url(../fonts/dream.otf), url(../fonts/dream-italic.otf), url(../fonts/dream-bold.otf), url(../fonts/dream-bold-italic.otf);
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Ninja Naruto";
+  src: url(../fonts/njnaruto.ttf);
+  font-weight: normal;
+}
+body {
+  font-family: "Dream";
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: navy;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 30px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 0.4rem;
+}
+a:hover, afocus {
+  color: #fd3b23;
+}
+
 .navBar {
   position: fixed;
   top: 0;
@@ -280,11 +312,52 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
-header img {
+header .headerContentContainer {
+  margin-top: 60px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .headerContentContainer a {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+header .headerContentContainer a img {
+  height: 10vh;
+  margin-right: 20px;
+}
+header .headerContentContainer h1 {
+  font-family: "Ninja Naruto";
+  font-size: 110px;
+  font-size: 5.5rem;
+  position: absolute;
+  color: #fd3b23;
+  text-shadow: 8px 8px 0 navy;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+header .headerContentContainer h1:hover {
+  color: navy;
+  text-shadow: 8px 8px 0 #fd3b23;
+}
+header .headerImgContainer img {
   height: 50vh;
-  margin-bottom: 100px;
+  margin-top: 90px;
 }
