@@ -250,3 +250,41 @@ html {
   right: 0;
   text-align: center;
 }
+
+.navBar {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+}
+.navBar .desktopNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+header {
+  background-image: url(../assets/header-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+header img {
+  height: 50vh;
+  margin-bottom: 100px;
+}
