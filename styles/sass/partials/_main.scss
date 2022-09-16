@@ -26,10 +26,7 @@ main {
             color: $logoColor;
             text-shadow: 3px 3px 0 $textColor;
         }
-        span.discordAdmin {
-            text-transform: uppercase;
-            color: $logoColor;
-        }
+        span.discordAdmin,
         span.guildMaster {
             color: $logoColor;
         }
@@ -48,6 +45,13 @@ main {
             margin-bottom: 30px;
 
             fieldset {
+                .requirementsContainer {
+                    display: block;
+                    position: relative;
+                    padding-left: 35px;
+                    margin-bottom: 12px;
+                    cursor: pointer;
+                }
                 @include fontSize(30);
                 margin: 0 30px;
                 padding: 30px;
