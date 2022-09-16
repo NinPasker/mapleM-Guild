@@ -263,7 +263,7 @@ html {
 }
 body {
   font-family: "Dream";
-  color: #fd3b23;
+  color: white;
 }
 
 h1,
@@ -274,7 +274,13 @@ h2 {
 h2 {
   font-size: 60px;
   font-size: 3rem;
-  padding: 30px;
+  border-bottom: 2px solid #fd3b23;
+}
+
+p {
+  font-size: 40px;
+  font-size: 2rem;
+  letter-spacing: 0.3rem;
 }
 
 ul {
@@ -303,11 +309,21 @@ a:hover, a:focus {
   width: 90%;
 }
 
+button {
+  border: 2px solid #fd3b23;
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+  font-family: "Dream";
+  padding: 10px 60px;
+}
+
 .navBar {
   position: fixed;
   top: 0;
   z-index: 10;
   width: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
 }
 .navBar .desktopNav {
   display: -webkit-box;
@@ -407,6 +423,12 @@ main {
   background-size: cover;
   background-position: center;
 }
+main h2 {
+  padding: 30px 30px 10px 30px;
+}
+main p {
+  padding: 0 30px 0 30px;
+}
 main .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -422,8 +444,19 @@ main .wrapper {
 }
 main .about,
 main .guildCheckList {
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(63, 63, 63, 0.9);
 }
 main .guildCheckList {
   margin-top: 50px;
+}
+main .guildCheckList form {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+main .guildCheckList form fieldset {
+  font-size: 30px;
+  font-size: 1.5rem;
+  margin: 0 30px;
+  padding: 30px;
+  border: 1px solid #fd3b23;
 }

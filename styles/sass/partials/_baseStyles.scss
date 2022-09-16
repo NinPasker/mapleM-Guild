@@ -1,6 +1,6 @@
 body {
     font-family: $primaryFont;
-    color: $logoColor;
+    color: white;
 }
 
 h1,
@@ -10,7 +10,12 @@ h2 {
 
 h2 {
     @include fontSize(60);
-    padding: 30px;
+    border-bottom: 2px solid $logoColor;
+}
+
+p {
+    @include fontSize(40);
+    letter-spacing: .3rem;
 }
 
 ul {
@@ -37,4 +42,13 @@ a {
     margin: 0 auto;
     max-width: 1200px;
     width: 90%;
+}
+
+button {
+    border: 2px solid $logoColor;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    font-family: $primaryFont;
+    padding: 10px 60px;
 }
