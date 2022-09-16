@@ -1,3 +1,22 @@
 main {
     height: 100vh;
+    background-image: url(../assets/black-background.png);
+    background-size: cover;
+    background-position: center;
+
+    .wrapper {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .about,
+    .guildCheckList {
+        background-color: rgb(255, 255, 255, 0.7);
+    }
+
+    .guildCheckList {
+        margin-top: 50px;
+    }
 }

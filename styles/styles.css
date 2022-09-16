@@ -263,11 +263,18 @@ html {
 }
 body {
   font-family: "Dream";
+  color: #fd3b23;
 }
 
 h1,
 h2 {
   margin: 0;
+}
+
+h2 {
+  font-size: 60px;
+  font-size: 3rem;
+  padding: 30px;
 }
 
 ul {
@@ -285,7 +292,7 @@ a {
   font-weight: bold;
   letter-spacing: 0.4rem;
 }
-a:hover, afocus {
+a:hover, a:focus {
   color: #fd3b23;
   text-shadow: 1px 1px 0 navy;
 }
@@ -350,6 +357,7 @@ header .headerContentContainer {
 header .headerContentContainer a {
   -ms-flex-item-align: end;
       align-self: flex-end;
+  z-index: 1;
 }
 header .headerContentContainer a img {
   height: 10vh;
@@ -365,11 +373,28 @@ header .headerContentContainer h1 {
   text-shadow: 8px 8px 0 navy;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  z-index: 1;
   cursor: pointer;
 }
 header .headerContentContainer h1:hover {
   color: navy;
   text-shadow: 8px 8px 0 #fd3b23;
+}
+header .headerImgContainer .overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgb(0, 0, 0)), color-stop(31%, rgba(0, 0, 0, 0)));
+  background-image: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 31%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 header .headerImgContainer img {
   height: 50vh;
@@ -378,4 +403,27 @@ header .headerImgContainer img {
 
 main {
   height: 100vh;
+  background-image: url(../assets/black-background.png);
+  background-size: cover;
+  background-position: center;
+}
+main .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+}
+main .about,
+main .guildCheckList {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+main .guildCheckList {
+  margin-top: 50px;
 }
