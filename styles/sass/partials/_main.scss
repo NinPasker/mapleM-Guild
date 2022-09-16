@@ -1,11 +1,11 @@
 main {
-    height: 100vh;
     background-image: url(../assets/black-background.png);
     background-size: cover;
     background-position: center;
+    padding: 100px 0 50px;
 
     h2 {
-        padding: 30px 30px 10px 30px;
+        padding: 30px 30px 30px 30px;
     }
 
     p {
@@ -18,6 +18,21 @@ main {
         justify-content: center;
         flex-direction: column;
         height: 100%;
+    }
+
+    .about {
+        span.logo {
+            font-family: $logoFont;
+            color: $logoColor;
+            text-shadow: 3px 3px 0 $textColor;
+        }
+        span.discordAdmin {
+            text-transform: uppercase;
+            color: $logoColor;
+        }
+        span.guildMaster {
+            color: $logoColor;
+        }
     }
 
     .about,
@@ -37,6 +52,16 @@ main {
                 margin: 0 30px;
                 padding: 30px;
                 border: 1px solid $logoColor;
+
+                label {
+                    display: inline-block;
+                    padding: 10px 0 5px 10px;
+                }
+
+                div:last-child {
+                    margin-top: 50px;
+                    text-align: center;
+                }
             }
         }
     }

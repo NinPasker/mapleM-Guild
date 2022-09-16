@@ -1,6 +1,7 @@
 body {
     font-family: $primaryFont;
     color: white;
+    letter-spacing: .3rem;
 }
 
 h1,
@@ -15,7 +16,7 @@ h2 {
 
 p {
     @include fontSize(40);
-    letter-spacing: .3rem;
+    line-height: 3.5rem;
 }
 
 ul {
@@ -51,4 +52,5 @@ button {
     color: white;
     font-family: $primaryFont;
     padding: 10px 60px;
+    letter-spacing: .3rem;
 }

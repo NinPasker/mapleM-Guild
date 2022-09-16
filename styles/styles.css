@@ -264,6 +264,7 @@ html {
 body {
   font-family: "Dream";
   color: white;
+  letter-spacing: 0.3rem;
 }
 
 h1,
@@ -280,7 +281,7 @@ h2 {
 p {
   font-size: 40px;
   font-size: 2rem;
-  letter-spacing: 0.3rem;
+  line-height: 3.5rem;
 }
 
 ul {
@@ -316,6 +317,7 @@ button {
   color: white;
   font-family: "Dream";
   padding: 10px 60px;
+  letter-spacing: 0.3rem;
 }
 
 .navBar {
@@ -418,13 +420,13 @@ header .headerImgContainer img {
 }
 
 main {
-  height: 100vh;
   background-image: url(../assets/black-background.png);
   background-size: cover;
   background-position: center;
+  padding: 100px 0 50px;
 }
 main h2 {
-  padding: 30px 30px 10px 30px;
+  padding: 30px 30px 30px 30px;
 }
 main p {
   padding: 0 30px 0 30px;
@@ -441,6 +443,18 @@ main .wrapper {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 100%;
+}
+main .about span.logo {
+  font-family: "Ninja Naruto";
+  color: #fd3b23;
+  text-shadow: 3px 3px 0 navy;
+}
+main .about span.discordAdmin {
+  text-transform: uppercase;
+  color: #fd3b23;
+}
+main .about span.guildMaster {
+  color: #fd3b23;
 }
 main .about,
 main .guildCheckList {
@@ -459,4 +473,12 @@ main .guildCheckList form fieldset {
   margin: 0 30px;
   padding: 30px;
   border: 1px solid #fd3b23;
+}
+main .guildCheckList form fieldset label {
+  display: inline-block;
+  padding: 10px 0 5px 10px;
+}
+main .guildCheckList form fieldset div:last-child {
+  margin-top: 50px;
+  text-align: center;
 }
