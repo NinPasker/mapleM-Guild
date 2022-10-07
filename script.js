@@ -1,21 +1,31 @@
+// targeting the checkbox to find the checked element
+
 const checkbox = document.querySelectorAll('input[type=checkbox]');
-// console.log(checkbox.checked);
 
-const form = document.querySelector('form');
+console.log(checkbox.length);
 
-console.log(form);
+// targeting the button to enable it when a condition is met
+
+const button = document.getElementById('check-button');
+
+console.log(button);
+
+// creating an array to store the selections
 
 const userSelectionArr = [];
 
+// looping through the checkbox element to find out if the checkboxes are checked or not and adding it to the array if it is checked, and removing if a checkbox is unchecked 
+
 checkbox.forEach(element => {
     element.addEventListener('input', function() {
-        console.log(element.checked);
         if (element.checked === true) {
             userSelectionArr.push(element.checked);
-        } else {
-            console.log('nothings happening');
+            if (checkbox.length === userSelectionArr.length) {
+                button.disabled = false;
+            }
+        } else if (element.checked === false) {
+            return userSelectionArr.pop(element.checked)
         }
     });
 });
-
 
