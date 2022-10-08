@@ -24,8 +24,10 @@ checkbox.forEach(element => {
                 button.disabled = false;
             }
         } else if (element.checked === false) {
-            return userSelectionArr.pop(element.checked)
+            userSelectionArr.pop(element.checked);
+            if (checkbox.length != userSelectionArr.length) {
+                button.disabled = true;
+            }
         }
     });
 });
-

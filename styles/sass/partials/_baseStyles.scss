@@ -53,4 +53,19 @@ button {
     font-family: $primaryFont;
     padding: 10px 60px;
     letter-spacing: .3rem;
+    transition: .3s;
+}
+
+button:hover:disabled {
+    opacity: .5;
+    cursor: not-allowed;
+}
+
+button:hover:enabled {
+    cursor: url(../assets/party-cursor.png), pointer;
+    color: $logoColor;
+}
+
+html {
+    scroll-behavior: smooth;
 }

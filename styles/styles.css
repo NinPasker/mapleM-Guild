@@ -318,6 +318,22 @@ button {
   font-family: "Dream";
   padding: 10px 60px;
   letter-spacing: 0.3rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+button:hover:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+button:hover:enabled {
+  cursor: url(../assets/party-cursor.png), pointer;
+  color: #fd3b23;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .navBar {
