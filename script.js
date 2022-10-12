@@ -2,13 +2,9 @@
 
 const checkbox = document.querySelectorAll('input[type=checkbox]');
 
-console.log(checkbox.length);
-
 // targeting the button to enable it when a condition is met
 
 const button = document.getElementById('check-button');
-
-console.log(button);
 
 // creating an array to store the selections
 

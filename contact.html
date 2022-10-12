@@ -22,4 +22,39 @@
         <!--END .desktopNav-->
     </nav>
     <!--END .navBar & .wrapper-->
+
+    <main id="mainContent" class="contact-background">
+        <div class="wrapper">
+            <form action="#" method="POST" class="guildRequestForm" name="guildRequestForm">
+                <label for="ign" class="sr-only">In Game Name</label>
+                <input type="text" id="ign" placeholder="In game name"> <!-- END IGN input -->
+            
+                <label for="discordId" class="sr-only">Discord ID</label>
+                <input type="text" id="discordId" placeholder="Discord Id">
+                <!-- END Discord Id input -->
+            
+                <select name="reason" id="reason">
+                    <option value="initial" disabled selected>Reason for joining</option>
+                    <option value="guildFortBattle">Guild fort battles for free crystals.</option>
+                    <option value="guidance">Looking for guidance from experienced players.</option>
+                    <option value="animeLover">Love anime & loved watching Naruto.</option>
+                    <option value="allIsGreat">All of the above 💖.</option>
+                    <option value="other">Other</option>
+                </select>
+                <!-- END reason input-->
+            
+                <label for="message" class="sr-only">Message for me</label>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Message for me"></textarea>
+                <!-- END message input -->
+            
+                <fieldset>
+                    <input type="checkbox" id="terms">
+                    <label for="terms">I agree to the <a href="#" class="terms">Terms & Conditions</a>.</label>
+                </fieldset>
+                <!-- END terms and conditions input -->
+            
+                <button class="button">Send Message</button>
+            </form> <!-- END .contactForm -->
+        </div>
+    </main>
 </body>
