@@ -2,12 +2,12 @@
     background-color: rgba(0, 0, 0, 0);
 
     a {
-        color: $contactColor;
+        color: white;
         text-shadow: none;
 
         &:hover,
         &:focus {
-            color: white; 
+            color: $contactColor; 
         }
     }
 }
@@ -57,7 +57,7 @@
             padding: 10px 10px;
             font-family: inherit;
             letter-spacing: .3rem;
-            color: $contactColor;
+            color: white;
         }
 
         fieldset .terms {

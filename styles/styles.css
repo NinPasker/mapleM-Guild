@@ -507,11 +507,11 @@ main .guildCheckList form fieldset div:last-child {
   background-color: rgba(0, 0, 0, 0);
 }
 .contactBar a {
-  color: #D41A2D;
+  color: white;
   text-shadow: none;
 }
 .contactBar a:hover, .contactBar a:focus {
-  color: white;
+  color: #D41A2D;
 }
 
 .contact-background {
@@ -558,7 +558,7 @@ main .guildCheckList form fieldset div:last-child {
   padding: 10px 10px;
   font-family: inherit;
   letter-spacing: 0.3rem;
-  color: #D41A2D;
+  color: white;
 }
 .contact-background form fieldset .terms {
   color: #D41A2D;
