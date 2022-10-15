@@ -502,3 +502,70 @@ main .guildCheckList form fieldset div:last-child {
   margin-top: 50px;
   text-align: center;
 }
+
+.contactBar {
+  background-color: rgba(0, 0, 0, 0);
+}
+.contactBar a {
+  color: #D41A2D;
+  text-shadow: none;
+}
+.contactBar a:hover, .contactBar a:focus {
+  color: white;
+}
+
+.contact-background {
+  background-image: url(../assets/contact-us-bkg.jpg);
+  height: 100vh;
+}
+.contact-background .wrapper {
+  width: 30%;
+}
+.contact-background form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.contact-background form input,
+.contact-background form select,
+.contact-background form textarea,
+.contact-background form fieldset,
+.contact-background form button {
+  margin: 10px 0;
+  background-color: black;
+  border: 2px solid #D41A2D;
+}
+.contact-background form button:hover,
+.contact-background form button:focus {
+  color: #D41A2D;
+}
+.contact-background form textarea {
+  resize: none;
+}
+.contact-background form input[type=text]:focus,
+.contact-background form textarea:focus {
+  outline-style: double;
+  outline-color: rgba(255, 255, 255, 0.8);
+  outline-width: 0.5rem;
+}
+.contact-background form input,
+.contact-background form select,
+.contact-background form textarea {
+  padding: 10px 10px;
+  font-family: inherit;
+  letter-spacing: 0.3rem;
+  color: #D41A2D;
+}
+.contact-background form fieldset .terms {
+  color: #D41A2D;
+  text-shadow: none;
+  font-size: 25px;
+  font-size: 1.25rem;
+}
+.contact-background form fieldset .terms:hover, .contact-background form fieldset .termsfocus {
+  color: white;
+}

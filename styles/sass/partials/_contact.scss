@@ -1,0 +1,75 @@
+.contactBar {
+    background-color: rgba(0, 0, 0, 0);
+
+    a {
+        color: $contactColor;
+        text-shadow: none;
+
+        &:hover,
+        &:focus {
+            color: white; 
+        }
+    }
+}
+
+.contact-background {
+    background-image: url(../assets/contact-us-bkg.jpg);
+    height: 100vh;
+
+    .wrapper {
+        width: 30%;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+
+
+        input,
+        select,
+        textarea,
+        fieldset,
+        button {
+            margin: 10px 0;
+            background-color: black;
+            border: 2px solid $contactColor;
+        }
+
+        button:hover,
+        button:focus {
+            color: $contactColor;
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        input[type=text]:focus,
+        textarea:focus {
+            outline-style: double;
+            outline-color: rgba(255, 255, 255, .8);
+            outline-width: .5rem;
+        }
+
+        input,
+        select,
+        textarea {
+            padding: 10px 10px;
+            font-family: inherit;
+            letter-spacing: .3rem;
+            color: $contactColor;
+        }
+
+        fieldset .terms {
+            color: $contactColor;
+            text-shadow: none;
+            @include fontSize(25);
+
+            &:hover,
+            &focus {
+                color: white;
+            }
+        }
+    }
+    
+}
