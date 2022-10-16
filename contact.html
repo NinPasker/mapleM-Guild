@@ -25,10 +25,10 @@
         <div class="wrapper">
             <form action="#" method="POST" class="guildRequestForm" name="guildRequestForm">
                 <label for="ign" class="sr-only">In Game Name</label>
-                <input type="text" id="ign" placeholder="In Game Name"> <!-- END IGN input -->
+                <input type="text" id="ign" placeholder="In Game Name" minlength="2" maxlength="12"> <!-- END IGN input -->
             
                 <label for="discordId" class="sr-only">Discord ID</label>
-                <input type="text" id="discordId" placeholder="Discord Id">
+                <input type="text" id="discordId" placeholder="Discord Id" minlength="2" maxlength="32">
                 <!-- END Discord Id input -->
             
                 <select name="reason" id="reason">
@@ -42,7 +42,7 @@
                 <!-- END reason input-->
             
                 <label for="message" class="sr-only">Message for me</label>
-                <textarea name="message" id="message" cols="30" rows="10" placeholder="Message for guild leadership"></textarea>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Message for guild leadership" disabled></textarea>
                 <!-- END message input -->
             
                 <fieldset>
@@ -51,8 +51,11 @@
                 </fieldset>
                 <!-- END terms and conditions input -->
             
-                <button class="button">Send Message</button>
+                <button class="button" disabled>Send Message</button>
             </form> <!-- END .contactForm -->
         </div>
     </main>
+
+    <script src="./script.js"></script>
 </body>
+</html>

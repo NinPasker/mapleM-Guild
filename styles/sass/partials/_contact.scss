@@ -35,13 +35,20 @@
             border: 2px solid $contactColor;
         }
 
-        button:hover,
-        button:focus {
+        button:hover:enabled,
+        button:focus:enabled {
             color: $contactColor;
         }
 
         textarea {
             resize: none;
+            transition: .5s;
+
+            &:hover:disabled,
+            &:focus:disabled {
+                opacity: .7;
+                cursor: not-allowed;
+            }
         }
 
         input[type=text]:focus,
