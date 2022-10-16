@@ -42,7 +42,6 @@
 
         textarea {
             resize: none;
-            transition: .5s;
 
             &:hover:disabled,
             &:focus:disabled {
@@ -65,6 +64,7 @@
             font-family: inherit;
             letter-spacing: .3rem;
             color: white;
+            transition: .3s;
         }
 
         fieldset .terms {

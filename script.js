@@ -18,10 +18,9 @@ const textarea = document.querySelector('textarea');
 // creating an array to store the selections from index checklist
 const userSelectionArr = [];
 
+// Index Javascript
 
 // looping through the checkbox element to find out if the checkboxes are checked or not and adding it to the array if it is checked, and removing if a checkbox is unchecked 
-
-// Index page checklist js functionality, using a forEach loop and adding an eventListener to enable checking of each input selected
 checkbox.forEach(element => {
     element.addEventListener('input', function() {
         if (element.checked === true) {
@@ -39,8 +38,9 @@ checkbox.forEach(element => {
 });
 
 
-// CONTACT US JAVASCRIPT
+// Contact Javascript
 
+// looping through options element to find out which option was chosen, while also looking for a specific selection to enable the textarea for user input
 options.forEach(option => {
     option.addEventListener('click', function() {
         if (option.value === 'other') {
@@ -50,3 +50,4 @@ options.forEach(option => {
         }
     });
 });
+

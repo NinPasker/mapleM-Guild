@@ -546,8 +546,6 @@ main .guildCheckList form fieldset div:last-child {
 }
 .contact-background form textarea {
   resize: none;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
 }
 .contact-background form textarea:hover:disabled, .contact-background form textarea:focus:disabled {
   opacity: 0.7;
@@ -566,6 +564,8 @@ main .guildCheckList form fieldset div:last-child {
   font-family: inherit;
   letter-spacing: 0.3rem;
   color: white;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .contact-background form fieldset .terms {
   color: #D41A2D;
