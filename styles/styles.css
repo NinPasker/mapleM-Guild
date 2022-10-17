@@ -611,3 +611,11 @@ main .guildCheckList form fieldset div:last-child {
 .terms-main .terms .guildMaster {
   color: #D41A2D;
 }
+
+.thanks-page {
+  font-size: 100px;
+  font-size: 5rem;
+  color: white;
+  border-color: #D41A2D;
+  background-color: rgba(63, 63, 63, 0.7);
+}
