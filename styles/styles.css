@@ -328,7 +328,8 @@ button:focus:disabled {
   cursor: not-allowed;
 }
 
-button:hover:enabled {
+button:hover:enabled,
+button:focus:enabled {
   cursor: url(../assets/party-cursor.png), pointer;
   color: #fd3b23;
 }
@@ -481,6 +482,10 @@ main .guildCheckList form {
   margin-top: 30px;
   margin-bottom: 30px;
 }
+main .guildCheckList form input[type=checkbox]:checked,
+main .guildCheckList form input[type=checkbox]:focus {
+  accent-color: #fd3b23;
+}
 main .guildCheckList form fieldset {
   font-size: 30px;
   font-size: 1.5rem;
@@ -551,6 +556,10 @@ main .guildCheckList form fieldset div:last-child {
   opacity: 0.7;
   cursor: not-allowed;
 }
+.contact-background form input[type=checkbox]:checked,
+.contact-background form input[type=checkbox]:focus {
+  accent-color: #D41A2D;
+}
 .contact-background form input[type=text]:focus,
 .contact-background form textarea:focus {
   outline-style: double;
@@ -573,8 +582,12 @@ main .guildCheckList form fieldset div:last-child {
   font-size: 25px;
   font-size: 1.25rem;
 }
-.contact-background form fieldset .terms:hover, .contact-background form fieldset .termsfocus {
+.contact-background form fieldset .terms:hover, .contact-background form fieldset .terms:focus {
   color: white;
+  outline-style: double;
+  outline-color: rgba(255, 255, 255, 0.8);
+  outline-width: 0.5rem;
+  padding: 0 10px;
 }
 
 .terms-main {
@@ -591,6 +604,9 @@ main .guildCheckList form fieldset div:last-child {
 .terms-main .terms h2 {
   border-color: #D41A2D;
   text-align: center;
+}
+.terms-main .terms p {
+  padding-bottom: 30px;
 }
 .terms-main .terms .guildMaster {
   color: #D41A2D;

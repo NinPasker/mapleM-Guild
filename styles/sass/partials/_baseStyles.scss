@@ -62,7 +62,8 @@ button:focus:disabled {
     cursor: not-allowed;
 }
 
-button:hover:enabled {
+button:hover:enabled,
+button:focus:enabled {
     cursor: url(../assets/party-cursor.png), pointer;
     color: $logoColor;
 }

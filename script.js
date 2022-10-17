@@ -9,8 +9,8 @@ const button = document.getElementById('check-button');
 // targeting the inputs with text fields
 const textInput = document.querySelectorAll('input[type=text]');
 
-// targeting the selction options, to add interactivity
-const options = document.querySelectorAll('option');
+// targeting the select element by id, to listen for a change event in the form
+const selectReason = document.getElementById('reason');
 
 //targeting the textarea to be able to enable it
 const textarea = document.querySelector('textarea');
@@ -40,14 +40,10 @@ checkbox.forEach(element => {
 
 // Contact Javascript
 
-// looping through options element to find out which option was chosen, while also looking for a specific selection to enable the textarea for user input
-options.forEach(option => {
-    option.addEventListener('click', function() {
-        if (option.value === 'other') {
-            textarea.disabled = false;
-        } else {
-            textarea.disabled = true;
-        }
-    });
-});
-
+selectReason.addEventListener('change', function() {
+    if (this.value === 'other') {
+        textarea.disabled = false;
+    } else {
+        textarea.disabled = true;
+    }
+})

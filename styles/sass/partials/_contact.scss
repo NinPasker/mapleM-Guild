@@ -50,6 +50,11 @@
             }
         }
 
+        input[type=checkbox]:checked,
+        input[type=checkbox]:focus {
+            accent-color: $contactColor;
+        }
+
         input[type=text]:focus,
         textarea:focus {
             outline-style: double;
@@ -73,8 +78,12 @@
             @include fontSize(25);
 
             &:hover,
-            &focus {
+            &:focus {
                 color: white;
+                outline-style: double;
+                outline-color: rgba(255, 255, 255, .8);
+                outline-width: .5rem;
+                padding: 0 10px;
             }
         }
     }

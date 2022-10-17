@@ -44,6 +44,11 @@ main {
             margin-top: 30px;
             margin-bottom: 30px;
 
+            input[type=checkbox]:checked,
+            input[type=checkbox]:focus {
+                accent-color: $logoColor;
+            }
+
             fieldset {
                 .requirementsContainer {
                     display: block;
