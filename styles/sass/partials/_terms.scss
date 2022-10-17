@@ -1,0 +1,22 @@
+.terms-main {
+    height: 100%;
+
+    .wrapper {
+        width: 90%;
+        display: block;
+        background-color: rgba(56, 55, 55, 0.8);
+    }
+
+    .terms {
+        margin-top: 40px;
+
+        h2 {
+            border-color: $contactColor;
+            text-align: center;
+        }
+
+        .guildMaster {
+            color: $contactColor;
+        }
+    }
+}

@@ -576,3 +576,22 @@ main .guildCheckList form fieldset div:last-child {
 .contact-background form fieldset .terms:hover, .contact-background form fieldset .termsfocus {
   color: white;
 }
+
+.terms-main {
+  height: 100%;
+}
+.terms-main .wrapper {
+  width: 90%;
+  display: block;
+  background-color: rgba(56, 55, 55, 0.8);
+}
+.terms-main .terms {
+  margin-top: 40px;
+}
+.terms-main .terms h2 {
+  border-color: #D41A2D;
+  text-align: center;
+}
+.terms-main .terms .guildMaster {
+  color: #D41A2D;
+}
