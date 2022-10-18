@@ -22,5 +22,20 @@
         .guildMaster {
             color: $contactColor;
         }
+
+        .formspree {
+            color: $contactColor;
+            text-shadow: none;
+            @include fontSize(35);
+
+            &:hover,
+            &:focus {
+                color: white;
+                outline: double;
+                outline-color: rgba(255, 255, 255, .8);
+                outline-width: .5rem;
+                padding: 0 10px;
+            }
+        }
     }
 }

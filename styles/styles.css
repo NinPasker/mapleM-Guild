@@ -526,6 +526,7 @@ main .guildCheckList form fieldset div:last-child {
 }
 .contact-background .wrapper {
   width: 30%;
+  height: 90%;
 }
 .contact-background form {
   display: -webkit-box;
@@ -589,6 +590,23 @@ main .guildCheckList form fieldset div:last-child {
   outline-width: 0.5rem;
   padding: 0 10px;
 }
+.contact-background .thanksContainer {
+  text-align: center;
+}
+.contact-background .thanksContainer .thanks {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #D41A2D;
+  text-shadow: none;
+  font-size: 25px;
+  font-size: 1.25rem;
+  padding: 10px 20px;
+}
+.contact-background .thanksContainer .thanks:hover, .contact-background .thanksContainer .thanks:focus {
+  color: white;
+  outline-style: double;
+  outline-color: rgba(255, 255, 255, 0.8);
+  outline-width: 0.5rem;
+}
 
 .terms-main {
   height: 100%;
@@ -610,6 +628,19 @@ main .guildCheckList form fieldset div:last-child {
 }
 .terms-main .terms .guildMaster {
   color: #D41A2D;
+}
+.terms-main .terms .formspree {
+  color: #D41A2D;
+  text-shadow: none;
+  font-size: 35px;
+  font-size: 1.75rem;
+}
+.terms-main .terms .formspree:hover, .terms-main .terms .formspree:focus {
+  color: white;
+  outline: double;
+  outline-color: rgba(255, 255, 255, 0.8);
+  outline-width: 0.5rem;
+  padding: 0 10px;
 }
 
 .thanks-page {

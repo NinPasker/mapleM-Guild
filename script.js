@@ -15,6 +15,12 @@ const selectReason = document.getElementById('reason');
 //targeting the textarea to be able to enable it
 const textarea = document.querySelector('textarea');
 
+//targeting the specific input checkbox in contact section
+const termsCheckBox = document.getElementById('terms');
+
+//targeting the form to be able to reset it on page exit
+const contactForm = document.getElementById('guildRequestForm')
+
 // creating an array to store the selections from index checklist
 const userSelectionArr = [];
 
@@ -27,6 +33,7 @@ checkbox.forEach(element => {
             userSelectionArr.push(element.checked);
             if (checkbox.length === userSelectionArr.length) {
                 button.disabled = false;
+                checkInitialValue();
             }
         } else if (element.checked === false) {
             userSelectionArr.pop(element.checked);
@@ -39,12 +46,32 @@ checkbox.forEach(element => {
 
 
 // Contact Javascript
+// created function to check if the selection option was changed, if not the button does not become enabled
+// this function is used in the checkbox foreach loop above
+const checkInitialValue = () => {
+    if (selectReason.value === 'initial') {
+        button.disabled = true;
+    } else {
+        button.disabled = false;
+    }
+}
 
+// adding a change eventlistener to find out if other was selected to open up the text area.
 selectReason.addEventListener('change', function() {
     if (this.value === 'other') {
         textarea.disabled = false;
     } else {
         textarea.disabled = true;
     }
+
+    if (termsCheckBox.checked === true) {
+        button.disabled = false;
+    } else {
+        button.disabled = true;
+    }
 })
 
+addEventListener('beforeunload', function(e) {
+    e.preventDefault();
+    contactForm.reset();
+})

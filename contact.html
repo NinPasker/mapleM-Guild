@@ -23,7 +23,7 @@
 
     <main id="mainContent" class="contact-background">
         <div class="wrapper">
-            <form action="https://formspree.io/f/xoqbnayk" method="POST" class="guildRequestForm" name="guildRequestForm">
+            <form action="https://formspree.io/f/xoqbnayk" method="POST" id= "guildRequestForm" class="guildRequestForm" name="guildRequestForm">
                 <label for="ign" class="sr-only">In Game Name</label>
                 <input name="name" type="text" id="ign" placeholder="In Game Name" minlength="2" maxlength="12" required> <!-- END IGN input -->
             
@@ -31,8 +31,8 @@
                 <input name="address" type="text" id="discordId" placeholder="Discord Id" minlength="2" maxlength="32" required>
                 <!-- END Discord Id input -->
             
-                <select name="reason" id="reason">
-                    <option value="initial" disabled selected>Reason for joining</option>
+                <select name="reason" id="reason" required>
+                    <option value="initial" selected disabled>Reason for joining</option>
                     <option value="guildFortBattle">Guild fort battles for free crystals.</option>
                     <option value="guidance">Looking for guidance from experienced players.</option>
                     <option value="animeLover">Love anime & loved watching Naruto.</option>
@@ -53,6 +53,10 @@
             
                 <button id="check-button" disabled>Send Message</button>
             </form> <!-- END .contactForm -->
+        </div>
+
+        <div class="thanksContainer">
+            <a href="./thanks.html" class="thanks">Already submitted a form? Click Here.</a>
         </div>
     </main>
 
